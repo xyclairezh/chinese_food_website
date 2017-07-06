@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+<title>Traditional Chinese Food Overview</title>
+
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<style>
+.img-circle {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    opacity: 1
+}
+
+.container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.overlay {
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 300px;
+  width: 300px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.padding {
+  padding-left: 80px;
+  padding-right: 50px;
+  display: inline-block;
+}
+
+</style>
+
+<body>
+<h1><center>Traditional Chinese Food Overview</center></h1>
+<header>
+  <nav>
+     <ul>
+        <li><strong><a href="index.html">Home</a></strong></li>
+        <li><strong><a href="Guangdong.html">Guangdong</a></strong></li>
+        <li><strong><a href="Hunan.html">Hunan</a></strong></li>
+        <li><strong><a href="Taiwan.html">Taiwan</a></strong></li>
+        <li><strong><a href="Sichuan.html">Sichuan</a></strong></li>
+    </ul>
+   </nav>
+</header>
+
+<nav>
+	<ul>
+		<li>
+		  <a href="Guangdong.html">
+		  <div class="padding">
+		    <div class="container">
+		      <img class="img-circle" src="images/guangdong.jpg" alt="Dim Sum">
+		      <div class="overlay">
+		        <div class="text">Guangdong</div>
+		      </div>
+
+		    </div>
+		  </div>
+		  </a>
+		</li>
+		<li>
+		  <a href="Hunan.html">
+		  <div class="padding">
+
+		    <div class="container">
+		      <img class="img-circle" src="images/hunan.jpg" alt="Spicy Fish">
+		      <div class="overlay">
+		        <div class="text">Hunan</div>
+		      </div>
+		    </div>
+	      </div>
+	      </a>
+	    </li>
+	</ul>
+</nav>	
+
+<nav>
+	<ul>
+		<li>
+		  <a href="Taiwan.html">
+		  <div class="padding">
+		    <div class="container">
+		      <img class="img-circle" src="images/taiwan.jpg" alt="snacks">
+		      <div class="overlay">
+		        <div class="text">Taiwan</div>
+		      </div>
+
+		    </div>
+          </div>
+		  </a>
+		</li>
+		
+		<li>
+		  <a href="Sichuan.html">
+		  <div class="padding">
+		    <div class="container">
+		      <img class="img-circle" src="images/sichuan.jpg" alt="Hot Pot">
+		      <div class="overlay">
+		        <div class="text">Sichuan</div>
+		      </div>
+
+		    </div>
+		  </div>
+		  </a>
+		</li>
+	</ul>
+</nav>
+
+<footer>
+<address>Copyright &copy; 2017, Xiaoyu Zhang</address>
+</footer>
+</body>
+</html>
