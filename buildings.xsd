@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="https://www.w3schools.com/buildings"
+xmlns="https://www.w3schools.com/buildings"
+elementFormDefault="qualified">
+
+<xs:element name="building_list">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="Building" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="BuildingName" type="xs:string" minOccurs="1" maxOccurs="1"/>
+						<xs:element name="Position" minOccurs="1" maxOccurs="1">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="Latitude" type="xs:decimal"/>
+									<xs:element name="Longitude" type="xs:decimal"/>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="Address" maxOccurs="1">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="StreetNo" type="xs:integer"/>
+									<xs:element name="StrName" type="xs:string"/>
+									<xs:element name="City" type="xs:string"/>
+									<xs:element name="State" type="xs:string"/>
+									<xs:element name="Zip" type="xs:integer"/>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+					<xs:attribute name="BuildingCode" use="required">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:length value="3" />
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:attribute>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>
+</xs:schema>
+
+
+
+
+
+
+
+
+
+
+
+
+
