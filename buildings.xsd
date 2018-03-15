@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-targetNamespace="https://github.com/xyclairezh/chinese_food_website/blob/master/buildings.xsd"
-xmlns="https://github.com/xyclairezh/chinese_food_website/blob/master/buildings.xsd"
-elementFormDefault="qualified">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
 <xs:element name="building_list">
 	<xs:complexType>
@@ -45,16 +42,3 @@ elementFormDefault="qualified">
 	</xs:complexType>
 </xs:element>
 </xs:schema>
-
-
-
-
-
-
-
-
-
-
-
-
-
